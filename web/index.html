@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Primary SEO -->
+    <title>WaveForm — AI Podcast Player with Live Interject | ChatInstance Demo</title>
+    <meta name="description" content="WaveForm is an AI-generated podcast player where you can interject live, ask the hosts questions, and get real-time AI responses. Built on ChatInstance by Alphinium. Try episodes on AI singularity, startup funding, remote work and more." />
+    <meta name="keywords" content="AI podcast, AI podcast player, podcast with AI hosts, live podcast interject, ChatInstance, Alphinium, AI voice assistant, AI audio, interactive podcast, WaveForm, podcast studio, AI generated podcast, voice AI demo, ElevenLabs TTS, conversational AI" />
+    <meta name="author" content="Alphinium / Redsitesoftware" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#08060F" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://waveform.app.alphinium.com/" />
+    <meta property="og:title" content="WaveForm — AI Podcast Player with Live Interject" />
+    <meta property="og:description" content="Listen to AI-hosted podcasts and interject live. Ask Maya, Leo or Ava anything mid-episode and they all respond. Built on ChatInstance by Alphinium." />
+    <meta property="og:site_name" content="WaveForm by Alphinium" />
+    <meta property="og:image" content="https://storage.googleapis.com/alphinium-assets/waveform/og-image.png" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:image:alt" content="WaveForm AI Podcast Player logo" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@alphinium" />
+    <meta name="twitter:title" content="WaveForm — AI Podcast Player with Live Interject" />
+    <meta name="twitter:description" content="Listen to AI-hosted podcasts and interject live. Ask Maya, Leo or Ava anything mid-episode and they all respond. Built on ChatInstance." />
+    <meta name="twitter:image" content="https://storage.googleapis.com/alphinium-assets/waveform/og-image.png" />
+    <meta name="twitter:image:alt" content="WaveForm AI Podcast Player" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://waveform.app.alphinium.com/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://storage.googleapis.com/alphinium-assets/waveform/favicon.png" />
+    <link rel="apple-touch-icon" href="https://storage.googleapis.com/alphinium-assets/waveform/og-image.png" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://waveform.app.alphinium.com/#website",
+          "url": "https://waveform.app.alphinium.com/",
+          "name": "WaveForm",
+          "description": "AI-generated podcast player with live interject — built on ChatInstance by Alphinium",
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://alphinium.com/#org",
+            "name": "Alphinium",
+            "url": "https://alphinium.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://storage.googleapis.com/alphinium-assets/waveform/favicon.png"
+            }
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://waveform.app.alphinium.com/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "PodcastSeries",
+          "@id": "https://waveform.app.alphinium.com/#podcast",
+          "name": "WaveForm",
+          "description": "AI-hosted podcast episodes on AI, startups, voice UI, remote work and the future of technology. Interject live mid-episode.",
+          "url": "https://waveform.app.alphinium.com/",
+          "image": "https://storage.googleapis.com/alphinium-assets/waveform/og-image.png",
+          "inLanguage": "en",
+          "genre": ["Technology", "Artificial Intelligence", "Business", "Startups"],
+          "keywords": "AI, artificial intelligence, singularity, startups, voice UI, remote work, ChatInstance, podcast",
+          "author": {
+            "@type": "Organization",
+            "name": "Alphinium",
+            "url": "https://alphinium.com"
+          },
+          "containsSeason": {
+            "@type": "PodcastSeason",
+            "name": "Season 1",
+            "numberOfEpisodes": 8
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://waveform.app.alphinium.com/#app",
+          "name": "WaveForm AI Podcast Player",
+          "applicationCategory": "MultimediaApplication",
+          "operatingSystem": "Web",
+          "url": "https://waveform.app.alphinium.com/",
+          "description": "Interactive AI podcast player powered by ChatInstance. Listen, interject, and have real-time conversations with AI podcast hosts.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "screenshot": "https://storage.googleapis.com/alphinium-assets/waveform/og-image.png",
+          "featureList": [
+            "AI-generated podcast episodes",
+            "Live interject — interrupt and ask questions mid-episode",
+            "Multi-agent AI hosts (Maya, Leo, Ava)",
+            "ElevenLabs TTS voice synthesis",
+            "Background image carousel",
+            "Fullscreen mode"
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style id="expo-reset">
+      /* React Native Web requires explicit heights on the parent chain for flex:1 to work */
+      html { height: 100%; margin: 0; padding: 0; }
+      body { height: 100%; margin: 0; padding: 0; background-color: #08060F; }
+      #root { height: 100%; display: flex; flex-direction: column; }
+      /* Hide Alphinium banner on /stream route (broadcast/OBS mode) */
+      body.stream-mode #alphinium-banner { display: none !important; }
+
+      /* Alphinium marketplace banner */
+      #alphinium-banner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 13px;
+        padding: 8px 16px;
+        box-shadow: 0 -2px 12px rgba(0,0,0,0.25);
+      }
+      #alphinium-banner a {
+        color: #60a5fa;
+        text-decoration: none;
+        font-weight: 700;
+        transition: color 0.2s;
+      }
+      #alphinium-banner a:hover { color: #93c5fd; }
+      #alphinium-banner .sep { opacity: 0.4; margin: 0 4px; }
+      #alphinium-banner .close-btn {
+        position: absolute;
+        right: 12px;
+        background: none;
+        border: none;
+        color: #9ca3af;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 0 4px;
+        line-height: 1;
+      }
+      #alphinium-banner .close-btn:hover { color: #fff; }
+    </style>
+  </head>
+  <body>
+    <!-- Alphinium Marketplace Banner -->
+    <div id="alphinium-banner">
+      <span>🚀 Built on <strong>Alphinium</strong> · Powered by <strong>ChatInstance</strong></span>
+      <span class="sep">·</span>
+      <a href="https://marketplace.alphinium.com" target="_blank" rel="noopener">Browse all demo apps →</a>
+      <span class="sep">·</span>
+      <a href="https://app.alphinium.com/signup" target="_blank" rel="noopener">Build your own</a>
+      <button class="close-btn" onclick="document.getElementById('alphinium-banner').style.display='none'" aria-label="Close">✕</button>
+    </div>
+
+    <noscript>
+      <h1>WaveForm — AI Podcast Player</h1>
+      <p>Listen to AI-hosted podcasts and interject live mid-episode. Built on ChatInstance by Alphinium.</p>
+      <p>Please enable JavaScript to use WaveForm.</p>
+    </noscript>
+    <div id="root"></div>
+    <script>
+      // Hide Alphinium banner on /stream route (clean OBS broadcast mode)
+      if (window.location.pathname.startsWith('/stream')) {
+        document.body.classList.add('stream-mode');
+      }
+    </script>
+  </body>
+</html>

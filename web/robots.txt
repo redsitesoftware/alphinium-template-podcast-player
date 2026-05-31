@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://waveform.app.alphinium.com/sitemap.xml

@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "WaveForm",
+    "slug": "podcast-player",
+    "version": "1.0.0",
+    "backgroundColor": "#09090B",
+    "primaryColor": "#A855F7",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "name": "WaveForm — AI Podcast Player with Live Interject",
+      "description": "Listen to AI-hosted podcasts and interject live. Ask Maya, Leo or Ava anything mid-episode. Built on ChatInstance by Alphinium.",
+      "themeColor": "#08060F",
+      "lang": "en"
+    },
+    "android": {
+      "package": "com.redsitesoftware.podcastPlayer"
+    },
+    "ios": {
+      "bundleIdentifier": "com.redsitesoftware.podcastPlayer"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4e02d131-6f8f-469d-8ae8-4456a900fe22"
+      }
+    },
+    "owner": "zx10r06",
+    "description": "AI-generated podcast studio with personality"
+  }
+}
