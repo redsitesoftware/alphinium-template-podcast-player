@@ -1,3 +1,9 @@
+[![Forge with Alphinium](https://img.shields.io/badge/🔨_Forge_with_Alphinium-Build_Your_Version-6366f1?style=for-the-badge&logo=github)](https://alphinium.com/forge?template=podcast-player)
+
+> **This is an Alphinium template.** Click the badge above to fork this project and have an AI agent build your customised version automatically.
+
+---
+
 # WaveForm
 
 WaveForm is a multi-agent AI podcast player — a demo vehicle for [ChatInstance](https://chatinstance.com) by Alphinium. Listen to AI-hosted episodes and **interject live** mid-episode to ask the hosts anything.
